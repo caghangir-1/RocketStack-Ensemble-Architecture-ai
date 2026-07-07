@@ -11,7 +11,7 @@ RocketStack departs from traditional flat ensemble stacking by utilizing a deep,
 
 ## 📖 Documentation & API
 
-👉 **[RocketStack Official API Documentation](https://caghangir-1.github.io/RocketStack-Ensemble-ai/)**
+👉 **[RocketStack Official API Documentation](https://caghangir-1.github.io/RocketStack-Ensemble-Architecture-ai/)**
 
 <br>
 
