@@ -16,6 +16,6 @@ RocketStack departs from traditional flat ensemble stacking by utilizing a deep,
 <br>
 
 ## 📚 Citation
-If you intend to use this architecture or codebase in your research, please cite the following study:
+If you intend to use this architecture or codebase in your research, please cite the following publication:
 
 Demirel, Ç. (2026). RocketStack: Level-aware deep recursive ensemble learning architecture. *Expert Systems with Applications*, Article 133521. https://doi.org/10.1016/j.eswa.2026.133521
