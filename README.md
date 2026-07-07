@@ -19,3 +19,5 @@ This repository contains the core architectural engine. For mathematical methodo
 
 ## 📚 Citation
 If you intend to use this architecture or codebase in your research, please cite the following study:
+
+Demirel, Ç. (2026). RocketStack: Level-aware deep recursive ensemble learning architecture. *Expert Systems with Applications*, Article 133521. https://doi.org/10.1016/j.eswa.2026.133521
