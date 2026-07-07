@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>RocketStack</h1>
-  <p><b>Level-Aware Deep Recursive Ensemble Learning Architecture</b></p>
+  <p><b>RocketStack: Level-Aware Deep Recursive Ensemble Learning Architecture</b></p>
 </div>
 
 <p align="center">
