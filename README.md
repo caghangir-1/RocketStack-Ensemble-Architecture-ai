@@ -1,6 +1,5 @@
 <div align="center">
-  <h1>RocketStack</h1>
-  <p><strong>Level-Aware Deep Recursive Ensemble Learning Architecture</strong></p>
+  <h1>RocketStack: Level-Aware Deep Recursive Ensemble Learning Architecture</h1>
   <p>Official reference implementation of the peer-reviewed research article published in <em>Expert Systems with Applications</em>.</p>
   <p>
     <a href="https://doi.org/10.1016/j.eswa.2026.133521">Research article</a>
