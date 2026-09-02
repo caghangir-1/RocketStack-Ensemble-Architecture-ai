@@ -1,0 +1,115 @@
+:root {
+  --rs-purple: #7e57c2;
+  --rs-purple-light: #b39ddb;
+  --rs-cyan: #55d6df;
+  --rs-surface: rgba(126, 87, 194, 0.09);
+  --rs-border: rgba(179, 157, 219, 0.28);
+}
+
+.rs-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 2.4rem;
+  padding: clamp(1.5rem, 4vw, 3.2rem);
+  border: 1px solid var(--rs-border);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at 88% 18%, rgba(85, 214, 223, 0.18), transparent 26%),
+    linear-gradient(135deg, rgba(126, 87, 194, 0.24), rgba(20, 21, 34, 0.72));
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.rs-hero h1 {
+  margin: 0.15rem 0 0;
+  font-size: clamp(2.5rem, 7vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.rs-hero h2 {
+  max-width: 44rem;
+  margin: 0.75rem 0 1rem;
+  border: 0;
+  font-size: clamp(1.15rem, 2.5vw, 1.7rem);
+  font-weight: 400;
+  color: var(--rs-purple-light);
+}
+
+.rs-hero > p:not(.rs-kicker) {
+  max-width: 48rem;
+  font-size: 1.05rem;
+}
+
+.rs-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--rs-cyan);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.rs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+.rs-actions .md-button {
+  margin: 0;
+}
+
+.rs-install {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 39rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(85, 214, 223, 0.25);
+  border-radius: 0.55rem;
+  background: rgba(9, 11, 19, 0.56);
+}
+
+.rs-install > span {
+  color: var(--rs-cyan);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.rs-install pre {
+  margin: 0;
+}
+
+.rs-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin: 1.2rem 0 2rem;
+}
+
+.rs-card {
+  padding: 1.1rem;
+  border: 1px solid var(--rs-border);
+  border-radius: 0.65rem;
+  background: var(--rs-surface);
+}
+
+.rs-card h3 {
+  margin-top: 0;
+}
+
+.rs-card p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .rs-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rs-hero {
+    border-radius: 0.7rem;
+  }
+}
