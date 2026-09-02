@@ -9,13 +9,13 @@ def test_public_exports() -> None:
     assert set(rocketstack_ensemble_ai.__all__) == {
         "RocketStack",
         "__version__",
-        "make_binary_classifier",
-        "make_multiclass_classifier",
+        "ascentTheRocket_binary_model",
+        "ascentTheRocket_multiclass_model",
     }
 
 
 def test_binary_factory() -> None:
-    model = rocketstack_ensemble_ai.make_binary_classifier(
+    model = rocketstack_ensemble_ai.ascentTheRocket_binary_model(
         level=1,
         iffeatselection=False,
         n_jobs=1,
@@ -23,13 +23,14 @@ def test_binary_factory() -> None:
     )
     assert model.problem_type == "binary"
     assert model.num_of_level == 1
+    assert hasattr(rocketstack_ensemble_ai.RocketStack(), "ascentTheRocket_binary_model")
     names, estimators = model._make_model_pool()
     assert len(names) == 20
     assert set(names) == set(estimators)
 
 
 def test_multiclass_factory() -> None:
-    model = rocketstack_ensemble_ai.make_multiclass_classifier(
+    model = rocketstack_ensemble_ai.ascentTheRocket_multiclass_model(
         level=1,
         iffeatselection_or_not=False,
         n_jobs=1,
@@ -37,6 +38,7 @@ def test_multiclass_factory() -> None:
     )
     assert model.problem_type == "multiclass"
     assert model.num_of_level == 1
+    assert hasattr(rocketstack_ensemble_ai.RocketStack(), "ascentTheRocket_multiclass_model")
     names, estimators = model._make_model_pool()
     assert len(names) == 14
     assert set(names) == set(estimators)

@@ -82,9 +82,9 @@ implementation uses the legacy `AdaBoostClassifier` `algorithm` parameter.
 ### Binary classification
 
 ```python
-from rocketstack_ensemble_ai import make_binary_classifier
+from rocketstack_ensemble_ai import ascentTheRocket_binary_model
 
-model = make_binary_classifier(
+model = ascentTheRocket_binary_model(
     level=3,
     return_model="best",
     iffeatselection=False,
@@ -100,9 +100,9 @@ y_prob = model.predict_proba(X_test)
 ### Multiclass classification
 
 ```python
-from rocketstack_ensemble_ai import make_multiclass_classifier
+from rocketstack_ensemble_ai import ascentTheRocket_multiclass_model
 
-model = make_multiclass_classifier(
+model = ascentTheRocket_multiclass_model(
     level=3,
     return_model="best",
     iffeatselection_or_not=False,
@@ -119,7 +119,7 @@ y_pred = model.predict(X_test)
 from rocketstack_ensemble_ai import RocketStack
 
 rocket = RocketStack()
-model = rocket.AscentTheRocket_binary_model(level=3, return_model="best")
+model = rocket.ascentTheRocket_binary_model(level=3, return_model="best")
 model.fit(X_train, y_train)
 ```
 
@@ -171,4 +171,3 @@ python -m twine check dist/*
 
 Copyright © 2026 Çağatay Demirel. RocketStack is distributed under the GNU
 General Public License v3.0 only (`GPL-3.0-only`).
-

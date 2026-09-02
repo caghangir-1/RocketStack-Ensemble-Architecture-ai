@@ -3,7 +3,7 @@
 from importlib.metadata import PackageNotFoundError, version
 from typing import Any
 
-from rocketstack_functions_with_model_api_original import RocketStack
+from rocketstack_functions_with_model_api_original import RocketStack as _RocketStack
 
 try:
     __version__ = version("rocketstack_ensemble_ai")
@@ -11,30 +11,28 @@ except PackageNotFoundError:  # pragma: no cover - source tree without installat
     __version__ = "0.1.0"
 
 
-def make_binary_classifier(**kwargs: Any) -> Any:
-    """Create a trainable binary RocketStack model.
+class RocketStack(_RocketStack):
+    """RocketStack API with branded lowercase model-factory aliases."""
 
-    Keyword arguments are passed to
-    :meth:`RocketStack.AscentTheRocket_binary_model`.
-    """
-
-    return RocketStack().AscentTheRocket_binary_model(**kwargs)
+    ascentTheRocket_binary_model = _RocketStack.AscentTheRocket_binary_model
+    ascentTheRocket_multiclass_model = _RocketStack.AscentTheRocket_multiclass_model
 
 
-def make_multiclass_classifier(**kwargs: Any) -> Any:
-    """Create a trainable multiclass RocketStack model.
+def ascentTheRocket_binary_model(**kwargs: Any) -> Any:
+    """Create a trainable binary RocketStack model."""
 
-    Keyword arguments are passed to
-    :meth:`RocketStack.AscentTheRocket_multiclass_model`.
-    """
+    return RocketStack().ascentTheRocket_binary_model(**kwargs)
 
-    return RocketStack().AscentTheRocket_multiclass_model(**kwargs)
+
+def ascentTheRocket_multiclass_model(**kwargs: Any) -> Any:
+    """Create a trainable multiclass RocketStack model."""
+
+    return RocketStack().ascentTheRocket_multiclass_model(**kwargs)
 
 
 __all__ = [
     "RocketStack",
     "__version__",
-    "make_binary_classifier",
-    "make_multiclass_classifier",
+    "ascentTheRocket_binary_model",
+    "ascentTheRocket_multiclass_model",
 ]
-
