@@ -11,13 +11,10 @@
   </p>
 </div>
 
-## Research article
+## 📚 Citation
+If you intend to use this architecture or codebase in your research, please cite the following publication:
 
-RocketStack accompanies the following publication:
-
-> Demirel, Ç. (2026). RocketStack: Level-aware deep recursive ensemble learning
-> architecture. *Expert Systems with Applications*, Article 133521.
-> [https://doi.org/10.1016/j.eswa.2026.133521](https://doi.org/10.1016/j.eswa.2026.133521)
+Demirel, Ç. (2026). RocketStack: Level-aware deep recursive ensemble learning architecture. *Expert Systems with Applications*, Article 133521. https://doi.org/10.1016/j.eswa.2026.133521
 
 The repository provides the canonical, versioned implementation of the
 architecture. The project website provides its public documentation and API
@@ -135,22 +132,6 @@ The complete documentation and API reference are available at:
 
 The GitHub Pages website is the presentation and documentation layer. This
 repository is the canonical source-code, issue-tracking, and release layer.
-
-## Citation
-
-If RocketStack or its code contributes to your research, please cite the
-published article:
-
-```bibtex
-@article{demirel2026rocketstack,
-  title   = {RocketStack: Level-aware deep recursive ensemble learning architecture},
-  author  = {Demirel, Çağatay},
-  journal = {Expert Systems with Applications},
-  year    = {2026},
-  pages   = {133521},
-  doi     = {10.1016/j.eswa.2026.133521}
-}
-```
 
 ## Versioning and development status
 
